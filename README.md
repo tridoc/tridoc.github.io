@@ -2,11 +2,11 @@
 
 tridoc offers easy document management for individuals and small teams.
 
-# server-side
+## server-side
 
 The core of tridoc is tridoc-backend ([repository](https://github.com/tridoc/tridoc-backend)).
 
-# client-side
+## client-side
 
 tridoc isn't bound to a single client-application, you can use any compatible app.
 
