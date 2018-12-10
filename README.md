@@ -1,4 +1,3 @@
-# tridoc
 *Provisional Site*
 
 tridoc offers easy document management for individuals and small teams.
