@@ -10,4 +10,4 @@ The core of tridoc is tridoc-backend ([repository](https://github.com/tridoc/tri
 
 tridoc isn't bound to a single client-application, you can use any compatible app.
 
-Currently, we only provide a simple webapp without very fancy UX, [tridoc-toolbox](https://tridoc.github.io/tridoc-backend) ([repository](https://github.com/tridoc/tridoc-toolbox)).
+Currently, we only provide a simple webapp without very fancy UX, [tridoc-toolbox](https://tridoc.me/tridoc-toolbox) ([repository](https://github.com/tridoc/tridoc-toolbox)).
