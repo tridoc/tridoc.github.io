@@ -1,0 +1,25 @@
+@import "./variables";
+
+// Set the primary theme color *before* importing any MDC components.
+$mdc-theme-primary: $standard-primary-color;
+$mdc-theme-secondary: $standard-primary-color;
+
+@import "@material/button/mdc-button";
+@import "@material/select/mdc-select";
+@import "@material/textfield/mdc-text-field";
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/notched-outline/mdc-notched-outline";
+@import "@material/card/mdc-card";
+@import "@material/typography/mdc-typography";
+@import "@material/list/mdc-list";
+@import "@material/icon-button/mdc-icon-button";
+@import "@material/elevation/mdc-elevation";
+@import "@material/layout-grid/mdc-layout-grid";
+@import "@material/snackbar/mdc-snackbar";
+@import "@material/textfield/icon/mdc-text-field-icon";
+@import "@material/textfield/helper-text/mdc-text-field-helper-text";
+@import "@material/form-field/mdc-form-field";
+@import "@material/radio/mdc-radio";
+@import "@material/chips/mdc-chips";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700');
