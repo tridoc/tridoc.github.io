@@ -92,6 +92,11 @@ body {
 
 .mdc-button {
     border-radius: $standard-border-radius;
+    padding: $standard-very-dense;
+}
+
+.margin-top {
+    margin-top: $standard-very-dense;
 }
 
 .mdc-text-field {

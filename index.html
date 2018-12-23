@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="theme-color" content="#00685b">
+    <meta name="theme-color" content="#003d32">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>tridoc</title>
     <link rel="icon" sizes="400x400" href="img/icon_square_400.png">
@@ -43,22 +43,33 @@
         <div class="mdc-layout-grid">
             <div class="mdc-layout-grid__inner">
 
+                <!--About-->
+
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+                    <div class="mdc-card card">
+                        <h2 class="mdc-typography--headline4">About</h2>
+                        <div class="card-content">
+                            <p>
+                                tridoc offers easy document management for individuals and small teams.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
                 <!--Backend-->
 
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet">
                     <div class="mdc-card card">
-                        <h2 class="mdc-typography--headline4">server-side</h2>
+                        <h2 class="mdc-typography--headline4">Server-side</h2>
                         <div class="card-content">
                             <p>
                                 The core of tridoc is tridoc-backend
                             </p>
                         </div>
-                        <div class="mdc-card__actions">
-                            <a class="mdc-button mdc-button--outlined mdc-card__action mdc-card__action--button" href="https://github.com/tridoc/tridoc-backend">
-                                <i class="material-icons mdc-button__icon" aria-hidden="true">open_in_new</i>
-                                GitHub Repository
-                            </a>
-                        </div>
+                        <a class="mdc-button" href="https://github.com/tridoc/tridoc-backend">
+                            <i class="material-icons mdc-button__icon" aria-hidden="true">open_in_new</i>
+                            GitHub Repository
+                        </a>
                     </div>
                 </div>
 
@@ -72,23 +83,18 @@
                                 tridoc isn’t bound to a single client-side application, you can use any compatible app.
                             </p>
                             <p>
-
-                            </p>
-                            <p>
                                 Currently, we only provide a simple webapp without very fancy UX, <a href="https://tridoc.me/tridoc-toolbox">tridoc-toolbox</a>
                                 (<a href="https://github.com/tridoc/tridoc-toolbox">repository</a>).
                             </p>
                         </div>
-                        <div class="mdc-card__actions">
-                            <a href="https://tridoc.me/tridoc-toolbox" class="mdc-button mdc-button--raised mdc-card__action mdc-card__action--button">
-                                Try it out
-                            </a>
-                            <a class="mdc-button mdc-button--outlined mdc-card__action mdc-card__action--button" href="https://github.com/tridoc/tridoc-toolbox"
-                                target="_blank">
-                                <i class="material-icons mdc-button__icon" aria-hidden="true">open_in_new</i>
-                                GitHub Repository
-                            </a>
-                        </div>
+                        <a href="https://tridoc.me/tridoc-toolbox" class="mdc-button mdc-button--unelevated">
+                            Try it out
+                        </a>
+                        <a class="mdc-button margin-top" href="https://github.com/tridoc/tridoc-toolbox"
+                            target="_blank">
+                            <i class="material-icons mdc-button__icon" aria-hidden="true">open_in_new</i>
+                            GitHub Repository
+                        </a>
                     </div>
                 </div>
 
