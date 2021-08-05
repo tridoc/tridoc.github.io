@@ -15,8 +15,10 @@ html {
   --skew-padding: calc(var(--width) * var(--skew-mn));
 
   --light: #ededed;
+  --dark: #121212;
   --theme: #00685b;
   --theme-light: #b2dfdb;
+  --theme-hover: #004c40;
 
   scroll-padding-top: var(--padding);
   font-size: 20px;
@@ -43,16 +45,19 @@ header {
   top: 0;
   width: 100vw;
   background: var(--theme);
-  line-height: 3rem;
-  z-index: 100
+  z-index: 900;
 }
 
 header>nav {
-  display: flex;
-  justify-content: stretch;
   margin: 0 auto;
   padding: 0 var(--padding);
-  width: var(--width);
+  max-width: var(--width);
+}
+
+nav {
+  display: flex;
+  justify-content: stretch;
+  line-height: 3rem;
 }
 
 nav>a {
@@ -67,10 +72,14 @@ nav>a {
 }
 
 nav>a:hover {
-  background: #00000033;
+  background: var(--theme-hover);
 }
 
 /* layout */
+
+main {
+  overflow-y: hidden;
+}
 
 section {
   position: relative;
@@ -90,6 +99,10 @@ section:nth-child(2n)::before {
   background: var(--light);
 }
 
+section.hero {
+  padding-top: 3rem;
+}
+
 section.hero::before {
   top: -200px;
   background: var(--theme-light);
@@ -97,14 +110,74 @@ section.hero::before {
 
 section>* {
   position: relative;
-  display: block;
-  width: var(--width);
+  max-width: var(--width);
   margin: 0 auto;
   padding: var(--skew-padding) var(--padding);
   transform: skewY(calc(0 - var(--skew)));
 }
 
-/* external links */
-a[href^="http"]::after {
-  content: " ↗";
+section.skew>nav {
+  padding: 0 var(--padding);
 }
+
+.skew>nav {
+  transform: skewY(var(--skew));
+  max-width: calc(0.75 * var(--width));
+  margin: 0 auto;
+  line-height: 2rem;
+}
+
+.skew>nav>a {
+  box-shadow: 0 0 0 .25rem var(--dark);
+  background: var(--dark);
+  border: .25rem solid var(--light);
+  margin: .5rem .25rem;
+}
+
+.skew>nav>a+a {
+  margin-left: .5rem;
+}
+
+.skew>nav>a:hover {
+  background: var(--theme-hover);
+  box-shadow: 0 0 0 .25rem var(--theme-hover);
+}
+
+/* small screens */
+@media screen and (max-width: 540px) {
+  nav {
+    flex-wrap: wrap;
+    line-height: 2rem;
+  }
+
+  .skew>nav {
+    flex-direction: column;
+  }
+  .skew>nav>a {
+    margin: .5rem .25rem;
+  }
+  .skew>nav>a+a {
+    margin-top: .25rem;
+    margin-left: .25rem;
+  }
+}
+
+/* footer */
+
+section.dark {
+  color: var(--light);
+}
+
+section.dark::before {
+  background: var(--dark);
+  bottom: -200px;
+}
+
+footer {
+  padding-bottom: var(--padding);
+}
+
+/* external links */
+/* a[href^="http"]::after {
+  content: " ↗";
+} */
