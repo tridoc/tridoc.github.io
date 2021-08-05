@@ -71,6 +71,7 @@ nav>a {
   color: var(--light);
 }
 
+nav>a:focus,
 nav>a:hover {
   background: var(--theme-hover);
 }
@@ -138,6 +139,7 @@ section.skew>nav {
   margin-left: .5rem;
 }
 
+.skew>nav>a:focus,
 .skew>nav>a:hover {
   background: var(--theme-hover);
   box-shadow: 0 0 0 .25rem var(--theme-hover);
@@ -164,6 +166,29 @@ p {
     margin-top: .25rem;
     margin-left: .25rem;
   }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr) );
+  gap: 1rem
+}
+
+.grid a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: var(--dark);
+}
+
+.grid a:focus,
+.grid a:hover {
+  outline: 2px solid var(--theme-light);
+}
+
+img {
+  width: 100%;
+  border: 1px solid var(--light);
 }
 
 /* footer */
